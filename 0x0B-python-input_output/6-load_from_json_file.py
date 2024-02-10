@@ -4,6 +4,6 @@
 import json
 
 def load_from_json_file(filename):
-   ''' json load '''
+    ''' json load func '''
     with open(filename, mode='r', encoding='utf-8') as f:
         return json.load(f)
