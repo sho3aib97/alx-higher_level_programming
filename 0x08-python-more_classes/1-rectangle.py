@@ -2,16 +2,19 @@
 ''' Rectangle class with height and width '''
 
 class Rectangle:
+''' rectangle class with w, h properties '''
     def __init__(self, width=0, height=0):
-        self.__width = width
+    ''' constructing the class '''
         self.__height = height
-    
+        self.__width = width 
     @property
     def width(self):
+    ''' defining width property '''
         return self.__width
 
     @width.setter
     def width(self, value):
+    ''' defining width setter '''
         if type(value) is not int:
             raise TypeError('width must be an integer')
         if value < 0:
@@ -20,10 +23,12 @@ class Rectangle:
 
     @property
     def height(self):
+    ''' defining height property '''
         return self.__height
 
     @height.setter
     def height(self, value):
+    ''' defining height setter '''
         if type(value) is not int:
             raise TypeError('height must be an integer')
         if value < 0:
