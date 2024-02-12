@@ -4,19 +4,19 @@ Rectangle class with height and width
 '''
 
 class Rectangle:
-    ''' rectangle class with w, h properties '''
+    ''' Rectangle class with w, h properties '''
     def __init__(self, width=0, height=0):
-        ''' constructing the class '''
+        ''' Constructing the class '''
         self.height = height
-        self.width = width 
+        self.width = width
     @property
     def width(self):
-        ''' defining width property '''
+        ''' Defining width property '''
         return self.__width
 
     @width.setter
     def width(self, value):
-        ''' defining width setter '''
+        ''' Defining width setter '''
         if type(value) is not int:
             raise TypeError('width must be an integer')
         if value < 0:
@@ -25,12 +25,12 @@ class Rectangle:
 
     @property
     def height(self):
-        ''' defining height property '''
+        ''' Defining height property '''
         return self.__height
 
     @height.setter
     def height(self, value):
-        ''' defining height setter '''
+        ''' Defining height setter '''
         if type(value) is not int:
             raise TypeError('height must be an integer')
         if value < 0:

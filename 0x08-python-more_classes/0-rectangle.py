@@ -4,5 +4,5 @@ Define empty class Rectangle
 '''
 
 class Rectangle:
-    ''' empty class for rectangle '''
+    ''' Empty class for rectangle '''
     pass
