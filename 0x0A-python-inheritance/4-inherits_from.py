@@ -1,4 +1,4 @@
-#!/usr/bin/pytho3
+#!/usr/bin/python3
 ''' check if subclass and not type '''
 
 def inherits_from(obj, a_class):
