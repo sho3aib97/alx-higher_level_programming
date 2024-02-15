@@ -14,21 +14,7 @@ class Rectangle(Base):
         self.__height = height
         self.__x = x
         self.__y = y
-
-    def check_value(self, name: str, obj: object, condition=False):
-        ''' checking value setters of the attributes '''
-
-        if not  isinstance(obj, int):
-            raise TypeError("{} must be an integer".format(name))
-
-        if not condition:
-            if value <= 0:
-                raise ValueError("{} must be > 0".format(name))
-            else:
-                if value < 0:
-                    raise ValueError("{} must be >= 0".format(name))
-                                                                    
-
+    
     @property
     def width(self):
         ''' width getter '''
@@ -37,7 +23,6 @@ class Rectangle(Base):
     @width.setter
     def width(self, width: int):
         ''' width setter '''
-        self.check_value('width', width)
         self.__width = width
 
     @property
@@ -48,7 +33,6 @@ class Rectangle(Base):
     @height.setter
     def height(self, height: int):
         ''' height setter '''
-        self.check_value("height", height)
         self.__height = height
 
 
@@ -60,7 +44,6 @@ class Rectangle(Base):
     @x.setter
     def x(self, x: int):
         ''' x setter '''
-        self.check_value("x", x, True)
         self.__x = x
 
     @property
@@ -71,6 +54,5 @@ class Rectangle(Base):
     @y.setter
     def y(self, y: int):
         ''' y setter '''
-        self.check_value('y', y, True)
         self.__y = y
 
